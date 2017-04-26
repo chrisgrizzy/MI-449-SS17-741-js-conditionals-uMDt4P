@@ -9,6 +9,7 @@ if (gameChoice === null || gameChoice === '') {
 } else {
   gameChoice = window.prompt('Nice to meet you ' + gameChoice + '! Time to start your journey. What power would you like? wind, water, or fire?')
   // Normalize the string
+  gameChoice = gameChoice || ''
   gameChoice = gameChoice.trim().toLowerCase()
 
   // If the chosen pill was either red or blue
